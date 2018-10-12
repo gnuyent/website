@@ -1,0 +1,30 @@
+# site
+title: gnuyent
+baseurl: ""
+url: "gnuyent.github.io"
+favicon: "/assets/favicon.ico"
+
+# bio
+header: gnuyent
+desc: >
+  I'm currently a high school student in California. I love to learn
+  new things by testing out different ideas and seeing what sticks.
+  Currently, I am focused on learning Windows System Administration 
+  and homelabbing. On this site, you will find my notes, various
+  ramblings, and my journey in learning.
+
+# posts
+date_format: "%m/%d/%Y"
+post_title: Post
+post_date: Date
+post_cat: Category
+
+# post detail
+prev-next: false
+
+# build settings
+markdown: kramdown
+theme: louie
+exclude:
+  - Gemfile
+  - Gemfile.lock
