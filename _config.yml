@@ -1,11 +1,11 @@
 # site
 title: gnuyent
 baseurl: ""
-url: "gnuyent.github.io"
+url: ""
 favicon: "/assets/favicon.ico"
 
 # bio
-header: gnuyent
+header: Brandon
 desc: >
   I'm currently a high school student in California. I love to learn
   new things by testing out different ideas and seeing what sticks.
