@@ -5,13 +5,9 @@ url: ""
 favicon: "/assets/favicon.ico"
 
 # bio
-header: Brandon
+header: Brandon Nguyen
 desc: >
-  I'm currently a high school student in California. I love to learn
-  new things by testing out different ideas and seeing what sticks.
-  Currently, I am focused on learning Windows System Administration 
-  and homelabbing. On this site, you will find my notes, various
-  ramblings, and my journey in learning.
+  Computer Science Freshman at San Diego State University.
 
 # posts
 date_format: "%m/%d/%Y"
