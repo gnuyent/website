@@ -1,14 +1,6 @@
 - title: GitHub
+  desc: '@gnuyent'
   url: https://github.com/gnuyent
-- title: GitLab
-  url: https://gitlab.com/gnuyent
-- title: E-mail
-  url: mailto:gnuyent@protonmail.com
 - title: LinkedIn
+  desc: Brandon Nguyen
   url: https://www.linkedin.com/in/brandonnguyen02
-- title: LeetCode
-  url: https://leetcode.com/gnuyent/
-- title: Project Euler
-  url: https://projecteuler.net/progress=gnuyent
-- title: Hack The Box
-  url: https://www.hackthebox.eu/home/users/profile/107219

@@ -5,11 +5,16 @@
 	</a>
   </div>
   <div class="bio__desc">{{ site.desc }}</div>
+  <br><b>Contact</b><br>
+  <div class="contact">{{ site.contact }}</div>
   {% if site.data.social %}
+  <div class="links">
+    <br><b>Links</b><br>
     <ul class="bio__social">
       {% for item in site.data.social %}
-        <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+      <li>{{ item.title }}: <a href="{{ item.url }}" target="_blank">{{ item.desc }}</a></li>
       {% endfor %}
     </ul>
+  </div>
   {% endif %}
 </div>

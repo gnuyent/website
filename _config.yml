@@ -1,22 +1,24 @@
 # site
-title: gnuyent
+title: Brandon Nguyen
 baseurl: ""
 url: ""
-favicon: "/assets/favicon.ico"
 
 # bio
 header: Brandon Nguyen
 desc: >
-  Computer Science Freshman at San Diego State University.
+    I'm a second-year computer science student at San Diego State University. 
+    <br> 
+contact: >
+    gnuyent (at) protonmail (dot) com
 
 # posts
-date_format: "%m/%d/%Y"
+date_format: "%B %d, %Y"
 post_title: Post
 post_date: Date
 post_cat: Category
 
 # post detail
-prev-next: false
+prev-next: true
 
 # build settings
 markdown: kramdown

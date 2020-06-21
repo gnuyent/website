@@ -4,15 +4,16 @@ $on-laptop:         800px !default;
 // typography
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 $inconsolata:       'Inconsolata', monospace;
-$font__size:        17px;
+$font__size:        18px;
 $font__weight:      400;
 $font__line-height: 1.5;
 
 // colors
-$color__black:      #000000;
-$color__gray:       #eeeeee;
-$color__beige:      #f8f8f1;
-$color__yellow:     #fefeca;
+$color__black:      #32302f;
+$color__gray:       #928374;
+$color__beige:      #fbf1c7;
+$color__yellow:     #fabd2f;
+$color__fg:         #fbf1c7;
 
 @mixin media-query($device) {
   @media screen and (min-width: $device) {
@@ -42,11 +43,11 @@ a {
   // display: block;
   // width: 100%;
   // height: 100%;
-  color: $color__black;
+  color: $color__fg;
   text-decoration: underline;
 
   &:hover {
-    color: $color__black;
+    color: #a89984;
   }
 }
 
@@ -60,10 +61,11 @@ body {
   width: 100%;
   margin: 25px 0;
   padding: 0;
-  background: $color__beige;
+  background: $color__black;
   font-family: $inconsolata;
   font-size: $font__size;
   font-weight: $font__weight;
+  color: $color__fg;
   line-height: $font__line-height;
 }
 

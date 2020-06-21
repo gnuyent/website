@@ -15,13 +15,6 @@
           Date
         {% endif %}
       </div>
-      <div class="row__cat">
-        {% if site.post_cat %}
-          {{ site.post_cat }}
-        {% else %}
-          Category
-        {% endif %}
-      </div>
     </li>
     {% for post in site.posts %}
       <li class="row__post">
@@ -35,9 +28,6 @@
             {% else %}
               {{ post.date | date: "%b %-d, %Y" }}
             {% endif %}
-          </div>
-          <div class="row__cat {% if include.uid == post.id %}row__active{% endif %}">
-            {{ post.category }}
           </div>
         </a>
 
