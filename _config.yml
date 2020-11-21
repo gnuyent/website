@@ -1,28 +1,48 @@
-# site
-title: Brandon Nguyen
+# Setup
+title: gnuyent
+url: https://gnuyent.dev
+paginate: 1
 baseurl: ""
-url: ""
+permalink: pretty
 
-# bio
-header: Brandon Nguyen
-desc: >
-    I'm a second-year computer science student at San Diego State University. I'm interested in security and systems programming.
-    <br>
-contact: >
-    gnuyent (at) protonmail (dot) com
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
 
-# posts
-date_format: "%B %d, %Y"
-post_title: Post
-post_date: Date
-post_cat: Category
-
-# post detail
-prev-next: true
-
-# build settings
-markdown: kramdown
-theme: louie
+# Optimize Jekyll
 exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
   - Gemfile
   - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
+author:
+  name: Brandon Nguyen
+  url: https://github.com/gnuyent
+  email: gnuyent@protonmail.com
+
+# Custom vars
+version: 3.0.0
+
+# Navbar page list
+nav:
+  - title: Writings
+    url: /archive
+
+  - title: About
+    url: /about
