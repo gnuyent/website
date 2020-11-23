@@ -7,14 +7,12 @@ Hi! My name is Brandon.
 
 I'm a second-year computer science student at [San Diego State University](https://www.sdsu.edu/).
 
-Currently interested in security and systems programming.
+I'm primarily interested in security and systems programming.
 
-## Contact
-gnuyent (at) protonmail (dot) com
+You can e-mail me at `gnuyent (at) protonmail (dot) com`.
 
-[GPG Key](./../gpg.txt)
+You can find my GPG Key [here](./../gpg.txt).
 
-## Connect
-GitHub: [@gnuyent](https://github.com/gnuyent)
+You can find my projects on GitHub [@gnuyent](https://github.com/gnuyent).
 
-LinkedIn: [Brandon Nguyen](https://www.linkedin.com/in/brandonnguyen02)
+All of the content on this website is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
