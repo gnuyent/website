@@ -1,0 +1,65 @@
+baseurl      = "https://gnuyent.dev"
+title        = "gnuyent"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+publishDir   = "docs/"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "gnuyent"
+  keywords = "homepage, blog"
+
+  # Default theme
+  defaultTheme = "dark"
+  themeColorDark = "#252627"
+  themeColorLight = "#fafafa"
+
+  [[params.social]]
+  name = "email"
+  url  = "mailto:gnuyent@protonmail.com"
+
+  [[params.social]]
+  name = "github"
+  url  = "https://github.com/gnuyent"
+
+  [[params.social]]
+  name = "linkedin"
+  url  = "https://linkedin.com/in/brandonnguyen02"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Brandon Nguyen"
+    copyright = '<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "gnuyent"
+      logoHomeLink = "/"
+      logoCursorColor   = "#e6f2ff"
+      logoCursorAnimate = "1.2s"
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
