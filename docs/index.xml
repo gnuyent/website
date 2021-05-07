@@ -6,7 +6,19 @@
     <description>Recent content on Brandon Nguyen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY 4.0&lt;/a&gt;</copyright><atom:link href="https://gnuyent.dev/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gnuyent.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim-like keybindings with IntelliJ and friends</title>
+      <link>https://gnuyent.dev/posts/2021-05-7-intellij-vim/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gnuyent.dev/posts/2021-05-7-intellij-vim/</guid>
+      <description>JetBrain&amp;rsquo;s IntelliJ IDEA is a great IDE for Java development. Here are my keybindings to make it like my Neovim configuration.
+IntelliJ Configuration  Install and enable the IdeaVim plugin.  Inside File -&amp;gt; Settings -&amp;gt; Keymap:
+ Copy the &amp;lsquo;Windows&amp;rsquo; preset and name it something (optional), mine is VIM. Choose Lookup Item Replace unbind. Down to Down, Tab, and Ctrl+J Up to Up, Shift+Tab, and Ctrl+K Optional: Search Everywhere to Ctrl+Shift+P  Tab-complete with Tab (scroll down) and Shift+Tab (scroll up).</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://gnuyent.dev/about/</link>

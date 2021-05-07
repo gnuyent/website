@@ -1,0 +1,79 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Brandon Nguyen</title>
+        <link>https://gnuyent.dev/posts/</link>
+        <description>Recent content in Posts on Brandon Nguyen</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://gnuyent.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Vim-like keybindings with IntelliJ and friends</title>
+            <link>https://gnuyent.dev/posts/2021-05-7-intellij-vim/</link>
+            <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+            
+            <guid>https://gnuyent.dev/posts/2021-05-7-intellij-vim/</guid>
+            <description>JetBrain&amp;rsquo;s IntelliJ IDEA is a great IDE for Java development. Here are my keybindings to make it like my Neovim configuration.
+IntelliJ Configuration  Install and enable the IdeaVim plugin.  Inside File -&amp;gt; Settings -&amp;gt; Keymap:
+ Copy the &amp;lsquo;Windows&amp;rsquo; preset and name it something (optional), mine is VIM. Choose Lookup Item Replace unbind. Down to Down, Tab, and Ctrl+J Up to Up, Shift+Tab, and Ctrl+K Optional: Search Everywhere to Ctrl+Shift+P  Tab-complete with Tab (scroll down) and Shift+Tab (scroll up).</description>
+            <content type="html"><![CDATA[<p><a href="https://www.jetbrains.com/idea/">JetBrain&rsquo;s IntelliJ IDEA</a> is a great IDE for Java development. Here are my keybindings to make it like my <a href="https://github.com/gnuyent/dotfiles">Neovim configuration</a>.</p>
+<h2 id="intellij-configuration">IntelliJ Configuration</h2>
+<ol>
+<li>Install and enable the IdeaVim plugin.</li>
+</ol>
+<p>Inside <code>File -&gt; Settings -&gt; Keymap</code>:</p>
+<ul>
+<li>Copy the &lsquo;Windows&rsquo; preset and name it something (optional), mine is <code>VIM</code>.</li>
+<li><code>Choose Lookup Item Replace</code> unbind.</li>
+<li><code>Down</code> to <code>Down</code>, <code>Tab</code>, and <code>Ctrl+J</code></li>
+<li><code>Up</code> to <code>Up</code>, <code>Shift+Tab</code>, and <code>Ctrl+K</code></li>
+<li>Optional: <code>Search Everywhere</code> to <code>Ctrl+Shift+P</code></li>
+</ul>
+<p>Tab-complete with <code>Tab</code> (scroll down) and <code>Shift+Tab</code> (scroll up). To select the completion, use the <code>Enter</code> key.</p>
+<p>In most IntelliJ GUI windows, you can scroll down using <code>Tab</code> and <code>Ctrl+J</code>. You can scroll up using <code>Shift+Tab</code> and <code>Ctrl+K</code>.</p>
+<h2 id="ideavimrc-configuration">.ideavimrc Configuration</h2>
+<p>On the bottom toolbar, click the IdeaVim icon and click <code>Open ~/.ideavimrc</code>. Most of your Vim(script) settings can be copy and pasted here.</p>
+<pre><code class="language-vimscript" data-lang="vimscript">let mapleader=&quot; &quot;
+
+&quot; Plugins
+set NERDTree
+set ideajoin
+
+&quot; NERDTree Plugins
+nmap &lt;leader&gt;op :NERDTreeToggle&lt;CR&gt;
+
+&quot; Relative line numbers
+set number relativenumber
+
+&quot; Copy to system clipboard
+set clipboard+=unnamed
+
+&quot; Better window navigation
+nmap &lt;C-h&gt; &lt;c-w&gt;h
+nmap &lt;C-j&gt; &lt;c-w&gt;j
+nmap &lt;C-k&gt; &lt;c-w&gt;k
+nmap &lt;C-l&gt; &lt;c-w&gt;l
+
+&quot; Refactoring
+nmap &lt;leader&gt;rn :action RenameElement&lt;CR&gt;
+nmap &lt;leader&gt;ca :action ShowIntentionActions&lt;CR&gt;
+nmap &lt;leader&gt;f :action ReformatCode&lt;CR&gt;
+
+&quot; Terminal
+nmap &lt;leader&gt;ot :action ActivateTerminalToolWindow&lt;CR&gt;
+</code></pre><p>The <code>:action</code> command is unique to IdeaVim. To see all bindable actions, use the command <code>:actionlist</code>. I used
+<a href="https://codecode.fun/blog/2020/01/05/idea-actions-list">this website</a> as a reference.</p>
+<h2 id="references">References</h2>
+<p>Thanks to the following for guidance:</p>
+<ul>
+<li><a href="https://gist.github.com/dewaka/ef947e52767bf453eaf77c852051eb7e">dewaka/.ideavimrc</a></li>
+<li><a href="https://github.com/JetBrains/ideavim/wiki/NERDTree-support">IdeaVim&rsquo;s NERDTree Bindings</a></li>
+<li><a href="https://codecode.fun/blog/2020/01/05/idea-actions-list">IDEA Actions List</a></li>
+</ul>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

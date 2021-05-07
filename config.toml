@@ -60,6 +60,6 @@ publishDir   = "docs/"
     name       = "About"
     url        = "about/"
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
+    identifier = "posts"
+    name       = "Posts"
     url        = "/posts"
