@@ -1,28 +1,32 @@
 +++
 categories = ["vim", "neovim", "intellij"]
 date = "2021-05-07"
-title = "Vim-like keybindings with IntelliJ and friends"
+title = "Vim-like settings for IntelliJ"
 type = "post"
 +++
 
-[JetBrain's IntelliJ IDEA](https://www.jetbrains.com/idea/) is a great IDE for Java development. Here are my keybindings to make it like my [Neovim configuration](https://github.com/gnuyent/dotfiles).
+To me, it's important to be efficient in simple tasks so I can focus on bigger problems. Vim (and its keybindings) lets me edit text quickly and efficently (simple task) so that I can focus on designing and engineering software (hard task).
 
-## IntelliJ Configuration
+[JetBrain's IntelliJ IDEA](https://www.jetbrains.com/idea/) is a great IDE for Java development that is missing one thing: a Vim-like editor. With its wonderful [IdeaVim](https://github.com/JetBrains/ideavim) plugin, we can get the power of a fantastic IDE and editor.
 
-1. Install and enable the IdeaVim plugin.
+## Configuring IntelliJ
 
-Inside `File -> Settings -> Keymap`:
-* Copy the 'Windows' preset and name it something (optional), mine is `VIM`.
+First, we need to configure some things within IntelliJ.
+
+For plugins, we need to install and enable the [IdeaVim](https://github.com/JetBrains/ideavim) plugin.
+
+Then, inside `File -> Settings -> Keymap`:
+* Copy the 'Windows' preset and name it something, mine is `VIM`.
 * `Choose Lookup Item Replace` unbind.
 * `Down` to `Down`, `Tab`, and `Ctrl+J`
 * `Up` to `Up`, `Shift+Tab`, and `Ctrl+K`
 * Optional: `Search Everywhere` to `Ctrl+Shift+P`
 
-Tab-complete with `Tab` (scroll down) and `Shift+Tab` (scroll up). To select the completion, use the `Enter` key.
+Now, we can tab-complete using `Tab` (scroll down) and `Shift+Tab` (scroll up). To select the completion, use the `Enter` key.
 
-In most IntelliJ GUI windows, you can scroll down using `Tab` and `Ctrl+J`. You can scroll up using `Shift+Tab` and `Ctrl+K`.
+In most IntelliJ GUI windows, we can scroll down using `Tab` and `Ctrl+J`. You can scroll up using `Shift+Tab` and `Ctrl+K`.
 
-## .ideavimrc Configuration
+## Configuring .ideavimrc
 
 On the bottom toolbar, click the IdeaVim icon and click `Open ~/.ideavimrc`. Most of your Vim(script) settings can be copy and pasted here.
 
