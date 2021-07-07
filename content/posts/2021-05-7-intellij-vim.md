@@ -1,15 +1,14 @@
 +++
-categories = ["vim", "neovim", "intellij"]
+tags = ["vim", "neovim", "intellij"]
 date = "2021-05-07"
 title = "Vim-like settings for IntelliJ"
-type = "post"
 +++
 
 To me, it's important to be efficient in simple tasks so I can focus on bigger problems. Vim (and its keybindings) lets me edit text quickly and efficently (simple task) so that I can focus on designing and engineering software (hard task).
 
 [JetBrain's IntelliJ IDEA](https://www.jetbrains.com/idea/) is a great IDE for Java development that is missing one thing: a Vim-like editor. With its wonderful [IdeaVim](https://github.com/JetBrains/ideavim) plugin, we can get the power of a fantastic IDE and editor.
 
-## Configuring IntelliJ
+## IntelliJ
 
 First, we need to configure some things within IntelliJ.
 
@@ -26,7 +25,7 @@ Now, we can tab-complete using `Tab` (scroll down) and `Shift+Tab` (scroll up). 
 
 In most IntelliJ GUI windows, we can scroll down using `Tab` and `Ctrl+J`. You can scroll up using `Shift+Tab` and `Ctrl+K`.
 
-## Configuring .ideavimrc
+## .ideavimrc
 
 On the bottom toolbar, click the IdeaVim icon and click `Open ~/.ideavimrc`. Most of your Vim(script) settings can be copy and pasted here.
 
