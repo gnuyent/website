@@ -18,17 +18,5 @@
 JetBrain&amp;rsquo;s IntelliJ IDEA is a great IDE for Java development that is missing one thing: a Vim-like editor. With its wonderful IdeaVim plugin, we can get the power of a fantastic IDE and editor.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://gnuyent.dev/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gnuyent.dev/about/</guid>
-      <description>About Hi! My name is Brandon.
-I am currently a second-year Computer Science student at San Diego State University. Currently, I am interested in computer security and systems programming with Go, Python, and Rust.
-This summer, I will be interning at Intuit.
-You can find my GPG Key here.</description>
-    </item>
-    
   </channel>
 </rss>

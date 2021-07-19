@@ -26,15 +26,23 @@ keywords = "homepage, blog"
     startLevel = 2
 
 [params]
+  colortheme = "white"
+  rss = true
+
+  # Home page settings
   description = "Hi! My name is Brandon. I'm a third-year Computer Science student at SDSU and Software Engineer Intern at Intuit."
   mainSection = "posts"
-  mathjax = true
   postsOnHomePage = 5
-  rss = true
-  showProjectsList = true
+  tagsOverview = false
   projectsUrl = "https://github.com/gnuyent"
-  showReadTime = true
+  showProjectsList = true
+
+  # Post page settings
   show_updated = true
+  showReadTime = true
+
+  [params.comments]
+    enabled = false
 
   [[params.social]]
     name = "email"
