@@ -30,7 +30,7 @@ keywords = "homepage, blog"
   rss = true
 
   # Home page settings
-  description = "Hi! My name is Brandon. I'm a third-year Computer Science student at SDSU and Software Engineer Intern at Intuit."
+  description = "Hi! My name is Brandon. I'm a senior at San Diego State University studying Computer Science."
   mainSection = "posts"
   postsOnHomePage = 5
   tagsOverview = false
