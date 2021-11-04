@@ -1,0 +1,26 @@
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: x-large;
+  margin: auto;
+  width: 45rem;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66402b;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
