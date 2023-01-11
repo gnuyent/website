@@ -23,7 +23,7 @@ Here's some things that I like:
 
 ## Technology
 
-This site is built using [Astro](https://astro.build/) with [Svelte](https://svelte.dev/) components and [TypeScript](https://www.typescriptlang.org/) integrations. It's hosted on GitHub Pages with automatic CI/CD with GitHub Actions from the `master` branch.
+This site is built using [Astro](https://astro.build/) with [Svelte](https://svelte.dev/) components and [TypeScript](https://www.typescriptlang.org/) integrations. It's hosted on GitHub Pages with automatic CI/CD with GitHub Actions from the `main` branch.
 
 <br />
 
