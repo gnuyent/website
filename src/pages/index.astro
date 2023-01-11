@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getGradientFromTag } from "../layouts/Layout.astro";
+const allPosts = await Astro.glob("../pages/blog/*.md");
+
+const formatDate = (date: string): string =>
+  new Date(date).toLocaleDateString("en-us", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+---
+
+<Layout title="Brandon Nguyen (gnuyent)">
+  <p>
+    <h1>About</h1>
+    Hi, I'm Brandon, software engineer and [noun] for whatever I'm interested in
+    at the moment.
+  </p>
+  <div>
+    <h1>Posts</h1>
+    {
+      allPosts.map((post) => (
+        <div class="grid items-center grid-cols-[110px_auto] grid-rows-[25px_auto]">
+          <p>{formatDate(post.frontmatter.pubDate)}</p>
+          <a href={post.url}>{post.frontmatter.title}</a>
+          <p
+            class={
+              "font-extrabold self-baseline text-transparent bg-clip-text " +
+              getGradientFromTag(post.frontmatter.tags)
+            }
+          >
+            {post.frontmatter.tags}
+          </p>
+          <p class="italic">{post.frontmatter.subtitle}</p>
+        </div>
+      ))
+    }
+  </div>
+</Layout>

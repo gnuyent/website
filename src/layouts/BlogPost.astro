@@ -1,0 +1,58 @@
+---
+import Navigation from "../components/Navigation.svelte";
+import Footer from "../components/Footer.svelte";
+import { formatDate, getGradientFromTag } from "./Layout.astro";
+import type { MarkdownLayoutProps } from "astro";
+
+type Props = MarkdownLayoutProps<{
+  // Define frontmatter props here
+  title: string;
+  subtitle: string;
+  pubDate: string;
+  updated?: string;
+  tags: string;
+}>;
+
+// Now, `frontmatter`, `url`, and other Markdown layout properties
+// are accessible with type safety
+const { frontmatter, url } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.title}</title>
+  </head>
+
+  <body class="text-white bg-black">
+    <Navigation />
+    <div class="w-4/5 sm:w-3/5 md:w-2/5 m-auto font-sans">
+      <h1 class="text-5xl">{frontmatter.title}</h1>
+      <h2 class="capitalize">{frontmatter.subtitle}</h2>
+      <div class="text-sm">
+        <p>
+          Published: {formatDate(frontmatter.pubDate)}
+          {
+            frontmatter.updated && (
+              <>| Edited: {formatDate(frontmatter.updated)}</>
+            )
+          }
+        </p>
+      </div>
+      <div
+        class={"mt-2 font-serif font-extrabold text-transparent bg-clip-text " +
+          getGradientFromTag(frontmatter.tags)}
+      >
+        {frontmatter.tags}
+      </div>
+      <hr class="my-5" />
+    </div>
+    <main class="w-4/5 sm:w-3/5 md:w-2/5 m-auto font-serif">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
