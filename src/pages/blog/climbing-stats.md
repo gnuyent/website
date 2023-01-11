@@ -32,15 +32,19 @@ tags: climbing
 
 ## Gyms
 
-- 🏠 Grotto Climbing & Yoga<sup>+</sup> (San Diego, CA)
+- Grotto Climbing & Yoga<sup>hb</sup> (San Diego, CA)
 - Mesa Rim (San Diego, CA)
-- The Circuit Bouldering Gym<sup>+</sup> (Bend, OR)
-
-`+` <small>bouldering only</small>
+- The Circuit Bouldering Gym<sup>b\*</sup> (Bend, OR)
 
 ## Outdoors
 
 None yet!
+
+`h` <small>home gym</small>
+
+`b` <small>bouldering only</small>
+
+`*` <small>favorite</small>
 
 # Gear Thoughts
 

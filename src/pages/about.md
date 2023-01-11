@@ -19,6 +19,7 @@ Here's some things that I like:
 - [Climbing](/blog/climbing-stats)
 - Coffee
 - Reading
+- Board games
 - Cool tech
 
 ## Technology
