@@ -16,7 +16,7 @@ I'm currently at Intuit, working on building and improving content pipelines and
 
 Here's some things that I like:
 
-- [Climbing](/blog/climbing)
+- [Climbing](/blog/climbing-stats)
 - Coffee
 - Reading
 - Cool tech
