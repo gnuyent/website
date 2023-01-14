@@ -1,58 +1,38 @@
 ---
-import Navigation from "../components/Navigation.svelte";
-import Footer from "../components/Footer.svelte";
-import { formatDate, getGradientFromTag } from "./Layout.astro";
-import type { MarkdownLayoutProps } from "astro";
+import { formatDate } from '../utils/formatDate';
+import { FrontmatterProps } from '../utils/types';
+import BaseLayout from './BaseLayout.astro';
 
-type Props = MarkdownLayoutProps<{
-  // Define frontmatter props here
-  title: string;
-  subtitle: string;
-  pubDate: string;
-  updated?: string;
-  tags: string;
-}>;
+type Props = FrontmatterProps;
 
-// Now, `frontmatter`, `url`, and other Markdown layout properties
-// are accessible with type safety
-const { frontmatter, url } = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>gnuyent - {frontmatter.title}</title>
-  </head>
-
-  <body class="text-white bg-black">
-    <Navigation />
-    <div class="w-4/5 sm:w-3/5 md:w-2/5 m-auto font-sans">
-      <h1 class="text-5xl">{frontmatter.title}</h1>
-      <h2 class="capitalize">{frontmatter.subtitle}</h2>
-      <div class="text-sm">
-        <p>
-          Published: {formatDate(frontmatter.pubDate)}
-          {
-            frontmatter.updated && (
-              <>| Edited: {formatDate(frontmatter.updated)}</>
-            )
-          }
+<BaseLayout title={frontmatter.title}>
+    <div id="post-header" class="flex flex-col content-start text-center">
+        <h1 class="my-0 text-5xl">{frontmatter.title}</h1>
+        <h2 class="my-0 text-2xl text-slate-100">{frontmatter.subtitle}</h2>
+        <p class="my-3 text-sm">
+            Published: {formatDate(frontmatter.pubDate)}
+            {
+                frontmatter.editDate && (
+                    <>| Edited: {formatDate(frontmatter.editDate)}</>
+                )
+            }
         </p>
-      </div>
-      <div
-        class={"mt-2 font-serif font-extrabold text-transparent bg-clip-text " +
-          getGradientFromTag(frontmatter.tags)}
-      >
-        {frontmatter.tags}
-      </div>
-      <hr class="my-5" />
+        <div class="flex justify-center gap-2">
+            {
+                frontmatter.tags.map((tag) => (
+                    <a
+                        class="rounded-full border border-white bg-transparent py-1 px-2 font-serif text-sm font-extrabold no-underline hover:bg-white hover:text-black"
+                        href={`/tags/${tag}`}
+                    >
+                        {tag}
+                    </a>
+                ))
+            }
+        </div>
     </div>
-    <main class="w-4/5 sm:w-3/5 md:w-2/5 m-auto font-serif">
-      <slot />
-    </main>
-    <Footer />
-  </body>
-</html>
+    <hr class="my-5" />
+    <slot />
+</BaseLayout>

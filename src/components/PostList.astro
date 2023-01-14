@@ -1,0 +1,24 @@
+---
+import { formatDate } from '../utils/formatDate';
+import { FrontmatterProps } from '../utils/types';
+
+const { title, posts } = Astro.props;
+
+const sortedPosts = posts
+    .filter((p) => !p.frontmatter.draft)
+    .sort((a, b) => (a.frontmatter.pubDate > b.frontmatter.pubDate ? -1 : 1));
+---
+
+<div>
+    <h1 class="capitalize">{title ? title : 'Posts'}</h1>
+    {
+        sortedPosts.map((p: FrontmatterProps) => (
+            <div class="grid grid-cols-[110px_auto] grid-rows-[25px_auto] items-center">
+                <p class="mb-0">{formatDate(p.frontmatter.pubDate)}</p>
+                <a href={p.url}>{p.frontmatter.title}</a>
+                <div />
+                <p class="mb-0 italic">{p.frontmatter.subtitle}</p>
+            </div>
+        ))
+    }
+</div>

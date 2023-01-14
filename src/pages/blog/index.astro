@@ -1,0 +1,29 @@
+---
+import PostList from '../../components/PostList.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const allPosts = await Astro.glob('./*.mdx');
+const tags = [
+    ...new Set(
+        allPosts
+            .filter((post) => !post.frontmatter.draft)
+            .map((post) => post.frontmatter.tags)
+            .flat(),
+    ),
+];
+---
+
+<BaseLayout title="Blog">
+    <div class="flex gap-2 pt-3">
+        {
+            tags.map((tag) => (
+                <a
+                    class="rounded-full border border-white bg-transparent py-1 px-2 font-serif text-sm font-extrabold no-underline hover:bg-white hover:text-black"
+                    href={`/tags/${tag}`}
+                >
+                    {tag}
+                </a>
+            ))
+        }
+    </div>
+    <PostList posts={allPosts} />
+</BaseLayout>
