@@ -16,7 +16,14 @@ const sortedPosts = posts
             <div class="grid grid-cols-[110px_auto] grid-rows-[25px_auto] items-center">
                 <p class="mb-0">{formatDate(p.frontmatter.pubDate)}</p>
                 <a href={p.url}>{p.frontmatter.title}</a>
-                <div />
+                <div class="self-baseline">
+                    <a
+                        class="rounded-full border border-white bg-transparent py-1 px-2 font-serif text-sm font-extrabold no-underline hover:bg-white hover:text-black"
+                        href={`/tags/${p.frontmatter.tags[0]}`}
+                    >
+                        {p.frontmatter.tags[0]}
+                    </a>
+                </div>
                 <p class="mb-0 italic">{p.frontmatter.subtitle}</p>
             </div>
         ))

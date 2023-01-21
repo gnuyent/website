@@ -5,18 +5,21 @@ title: About
 
 # About
 
-Hey! I'm Brandon. This blog is a place to experiment and share my thoughts. I'm
-a full stack software engineer in San Diego, CA.
+Hey! I'm Brandon. I'm a full stack engineer at [Intuit](https://www.intuit.com/) where I work on building and improving content pipelines and creating responsive front-end widgets.
 
-I'm currently at Intuit, working on building and improving content pipelines and creating responsive front-end widgets.
+I recently (2022) graduated from [San Diego State University](https://www.sdsu.edu) with a bachelor's degree in Computer Science. While there, and in high school, I competed in different security competitions.
 
-Here's some of my current interests:
+My main hobbies are:
 
 -   [Climbing](/blog/climbing-stats)
 -   Coffee
 -   Reading
 -   Board games
 -   Cool tech
+
+<br />
+
+some of which I'll probably write on!
 
 ## Technology
 
@@ -27,8 +30,6 @@ You can find the source on [GitHub](https://github.com/gnuyent/website).
 The sans font is [Inter](https://rsms.me/inter/), the serif font is [STIX Two](https://www.stixfonts.org/).
 
 ## Contact
-
-I respond the fastest over e-mail :).
 
 -   e-mail: [gnuyent]@proton.me (without the brackets)
 -   github: [gnuyent](https://github.com/gnuyent)

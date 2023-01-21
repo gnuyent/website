@@ -1,15 +1,33 @@
 ---
 import PostList from '../components/PostList.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Icon } from 'astro-icon';
 
 const allPosts = await Astro.glob('../pages/blog/*.mdx');
 ---
 
 <BaseLayout title="Home">
-    <p>
-        <h1>About</h1>
-        Hi, I'm Brandon, software engineer and [noun] for whatever I'm interested
-        in at the moment.
-    </p>
+    <div>
+        <h1>Welcome!</h1>
+        <p>
+            Hi, I'm Brandon, full stack software engineer, amateur rock climber,
+            and [fun] enthusiast.
+        </p>
+        <div class="flex gap-2">
+            <a href="/rss.xml"><Icon name="mdi:rss" class="h-10 w-10" /></a>
+            <a href="mailto:gnuyent@proton.me"
+                ><Icon name="mdi:email-outline" class="h-10 w-10" /></a
+            >
+            <a href="https://github.com/gnuyent"
+                ><Icon name="mdi:github" class="h-10 w-10" /></a
+            >
+            <a href="https://www.linkedin.com/in/gnuyent/"
+                ><Icon name="mdi:linkedin" class="h-10 w-10" /></a
+            >
+            <a href="https://hachyderm.io/@gnuyent"
+                ><Icon name="mdi:mastodon" class="h-10 w-10" /></a
+            >
+        </div>
+    </div>
     <PostList posts={allPosts} />
 </BaseLayout>
