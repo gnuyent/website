@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-    site: 'https://gnuyent.dev',
+    site: 'https://gnuyent.dev/',
     markdown: {
         drafts: true,
     },
