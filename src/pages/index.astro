@@ -1,7 +1,7 @@
 ---
 import PostList from '../components/PostList.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { Icon } from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 
 const allPosts = await Astro.glob('../pages/blog/*.mdx');
 ---
@@ -28,6 +28,14 @@ const allPosts = await Astro.glob('../pages/blog/*.mdx');
                 ><Icon name="mdi:mastodon" class="h-10 w-10" /></a
             >
         </div>
+        <div>
+            <a
+                class="rounded-full border border-white bg-transparent px-2 py-1 font-serif text-sm font-extrabold no-underline hover:bg-white hover:text-black"
+                href={'/pickleball'}
+            >
+                Pickleball
+            </a>
+        </div>
+        <PostList posts={allPosts} />
     </div>
-    <PostList posts={allPosts} />
 </BaseLayout>

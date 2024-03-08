@@ -5,16 +5,18 @@ title: About
 
 # About
 
-Hey! I'm Brandon. I'm a full stack engineer at [Intuit](https://www.intuit.com/) where I work on building and improving content pipelines and creating responsive front-end widgets.
+Hey! I'm Brandon. I'm a full stack engineer at [Intuit](https://www.intuit.com/) where I work on crafting dynamic and composable full-stack experiences.
 
 I recently (2022) graduated from [San Diego State University](https://www.sdsu.edu) with a bachelor's degree in Computer Science. While there, and in high school, I competed in different security competitions.
 
 My main hobbies are:
 
 -   [Climbing](/blog/climbing-stats)
--   Coffee
+-   Pickleball
+-   Improv
 -   Reading
 -   Board games
+-   Coffee
 -   Cool tech
 
 <br />
@@ -27,7 +29,7 @@ This site is built using [Astro](https://astro.build/), [Tailwind CSS](https://t
 
 You can find the source on [GitHub](https://github.com/gnuyent/website).
 
-The sans font is [Inter](https://rsms.me/inter/), the serif font is [STIX Two](https://www.stixfonts.org/).
+The font is [Atkinson Hyperlegible](https://brailleinstitute.org/freefont).
 
 ## Contact
 
