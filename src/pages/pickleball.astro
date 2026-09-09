@@ -3,7 +3,9 @@ import PostList from '../components/PostList.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { Icon } from 'astro-icon/components';
 
-const allPosts = await Astro.glob('../pages/blog/*.mdx');
+const allPosts = Object.values(
+    import.meta.glob('../pages/blog/*.mdx', { eager: true }),
+);
 ---
 
 <BaseLayout title="Home" />

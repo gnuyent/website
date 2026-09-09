@@ -3,7 +3,9 @@ import PostList from '../../components/PostList.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
-    const allPosts = await Astro.glob('../blog/*.mdx');
+    const allPosts = Object.values(
+        import.meta.glob('../blog/*.mdx', { eager: true }),
+    );
 
     const uniqueTags = [
         ...new Set(

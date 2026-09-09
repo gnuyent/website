@@ -6,5 +6,6 @@ export type FrontmatterProps = MarkdownLayoutProps<{
     subtitle: string;
     pubDate: string;
     editDate?: string;
+    draft?: boolean;
     tags: string[];
 }>;

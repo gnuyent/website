@@ -1,7 +1,7 @@
 ---
 import PostList from '../../components/PostList.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-const allPosts = await Astro.glob('./*.mdx');
+const allPosts = Object.values(import.meta.glob('./*.mdx', { eager: true }));
 const tags = [
     ...new Set(
         allPosts

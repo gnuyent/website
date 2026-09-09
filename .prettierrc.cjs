@@ -11,7 +11,7 @@ module.exports = {
             },
         },
     ],
-    pluginSearchDirs: false,
+    tailwindStylesheet: './src/styles/global.css',
     printWidth: 80,
     tabWidth: 4,
     trailingComma: 'all',
